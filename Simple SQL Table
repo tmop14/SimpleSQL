@@ -1,0 +1,20 @@
+CREATE TABLE soccer_cleats (id INTEGER PRIMARY KEY, brand TEXT, price REAL, durability_rating INTEGER, overall_rating REAL);
+
+INSERT INTO soccer_cleats VALUES (1, "Nike Mercurial", 129.99, 9, 9.4);
+INSERT INTO soccer_cleats VALUES (6, "Nike Superfly", 149.99, 9, 9.6);
+INSERT INTO soccer_cleats VALUES (7, "Adidas Nemeziz", 89.99, 7, 8.1);
+INSERT INTO soccer_cleats VALUES (2, "Adidas Predator", 99.99, 8, 8.9);
+INSERT INTO soccer_cleats VALUES (8, "Puma Future", 74.99, 7, 7.8);
+INSERT INTO soccer_cleats VALUES (9, "Puma Ultimate", 64.99, 6, 7.2);
+INSERT INTO soccer_cleats VALUES (3, "Puma Ultra", 89.99, 6, 7.7);
+INSERT INTO soccer_cleats VALUES (4, "New Balance Tekela", 69.99, 7, 7.9);
+INSERT INTO soccer_cleats VALUES (10, "New Balance Furon", 79.99, 8, 8.3);
+INSERT INTO soccer_cleats VALUES (5, "Nike Phantom", 59.99, 6, 7.1);
+INSERT INTO soccer_cleats VALUES (11, "Adidas Copa Pure", 59.99, 8, 7.6);
+INSERT INTO soccer_cleats VALUES (12, "Nike Tiempo", 89.99, 9, 9.1);
+INSERT INTO soccer_cleats VALUES (13, "Adidas Copa Sense", 69.99, 7, 7.7);
+INSERT INTO soccer_cleats VALUES (14, "New Balance 442", 59.99, 6, 6.5);
+INSERT INTO soccer_cleats VALUES (15, "Adidas X", 79.99, 8, 8.4);
+
+SELECT * FROM soccer_cleats ORDER BY price;
+SELECT * FROM soccer_cleats WHERE overall_rating > 8.5 AND price < 99.99;
